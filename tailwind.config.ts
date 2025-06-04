@@ -40,9 +40,13 @@ export default {
 					DEFAULT: 'hsl(var(--muted))',
 					foreground: 'hsl(var(--muted-foreground))'
 				},
-				accent: {
+				accent: { // This will be Doraemon Yellow
 					DEFAULT: 'hsl(var(--accent))',
 					foreground: 'hsl(var(--accent-foreground))'
+				},
+        accentRed: { // New: Doraemon Red
+					DEFAULT: 'hsl(var(--accent-red))',
+					foreground: 'hsl(var(--accent-red-foreground))'
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
@@ -52,7 +56,7 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
+				sidebar: { // These now correctly reference the main theme CSS variables
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
 					primary: 'hsl(var(--sidebar-primary))',
@@ -63,11 +67,14 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				}
 			},
-			borderRadius: {
+			borderRadius: { // Updated to use the new --radius value
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+      fontFamily: {
+        sans: ['var(--font-sans)'], // Sets "Nunito" (with fallbacks) as the default sans-serif font
+      },
 			keyframes: {
 				'accordion-down': {
 					from: {
